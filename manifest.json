@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Temp Mail",
+  "version": "1.0",
+  "description": "Generate a temporary email address to sign up for websites that require email verification.",
+  "permissions": ["activeTab"],
+  "action": {
+    "default_popup": "index.html"
+  },
+  "icons": {
+    "16": "icons/mail.png",
+    "48": "icons/mail.png",
+    "128": "icons/mail.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["script.js"]
+    }
+  ]
+}

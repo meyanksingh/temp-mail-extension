@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temp Mail</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="icons/mail.png" alt="Temp Mail Logo" class="logo">
+            <h2 class="title">Temporary Email</h2>
+        </div>
+        
+        <div id="email-address">
+            Click 'Generate New' to create email
+        </div>
+        
+        <div class="button-grid">
+            <button id="generate-btn" class="button">
+                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                </svg>
+                Generate New
+            </button>
+            <button id="copy-btn" class="button">
+                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" />
+                </svg>
+                Copy Email
+            </button>
+        </div>
+        
+        <div class="inbox-header">
+            <h3 class="inbox-title">Inbox</h3>
+            <div class="inbox-meta">
+                <span id="mail-counter"></span>
+                <span>•</span>
+                <span>Auto-refreshes every 30s</span>
+            </div>
+        </div>
+        
+        <div id="email-inbox">
+            Your received emails will appear here
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
